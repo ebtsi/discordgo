@@ -24,6 +24,15 @@ type RateLimit struct {
 	URL string
 }
 
+// RestAPIError is the data for a RestAPIError event.
+// This event is emitted when the rest API encounters a 401 or 403 status.
+// This is a synthetic event and is not dispatched by Discord.
+type RestAPIError struct {
+	URL  string
+	Err  string
+	Code int
+}
+
 // Event provides a basic initial struct for all websocket events.
 type Event struct {
 	Operation int             `json:"op"`
