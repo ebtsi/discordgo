@@ -27,6 +27,8 @@ import (
 type Session struct {
 	sync.RWMutex
 
+	ClientAppIdentifier string // identifier for use by client application - not used/modified by DiscordGo
+
 	// General configurable settings.
 
 	// Authentication token for this session
