@@ -290,7 +290,9 @@ const (
 	ChannelTypeGuildPublicThread  ChannelType = 11
 	ChannelTypeGuildPrivateThread ChannelType = 12
 	ChannelTypeGuildStageVoice    ChannelType = 13
+	ChannelTypeGuildDirectory     ChannelType = 14
 	ChannelTypeGuildForum         ChannelType = 15
+	ChannelTypeGuildMedia         ChannelType = 16
 )
 
 // ChannelFlags represent flags of a channel/thread.
@@ -2038,6 +2040,15 @@ const (
 
 	AuditLogActionCreatorMonetizationRequestCreated AuditLogAction = 150
 	AuditLogActionCreatorMonetizationTermsAccepted  AuditLogAction = 151
+
+	AuditLogActionOnboardingPromptCreate AuditLogAction = 163
+	AuditLogActionOnboardingPromptUpdate AuditLogAction = 164
+	AuditLogActionOnboardingPromptDelete AuditLogAction = 165
+	AuditLogActionOnboardingCreate       AuditLogAction = 166
+	AuditLogActionOnboardingUpdate       AuditLogAction = 167
+
+	AuditLogActionHomeSettingsCreate = 190
+	AuditLogActionHomeSettingsUpdate = 191
 )
 
 // GuildMemberParams stores data needed to update a member
